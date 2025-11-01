@@ -189,3 +189,5 @@ from pyngrok import ngrok
 # Create ngrok tunnel
 public_url = ngrok.connect(8501)
 print("🚀 App running at:", public_url)
+
+🚀 App running at: NgrokTunnel: "https://potted-unmixed-rochelle.ngrok-free.dev" -> "http://localhost:8501"
