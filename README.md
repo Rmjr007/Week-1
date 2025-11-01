@@ -1,13 +1,13 @@
 # Week-1
 Green Policy Simulator for Electric Vehicles (EVs) Adoption
 
-📘 Project Overview
+#📘 Project Overview
 This project explores how **green policies** (like subsidies, charging infrastructure expansion, or tax rebates) can influence **EV adoption trends**.  
 Using **Machine Learning** and **Generative AI**, the goal is to simulate and visualize the potential impact of various government interventions on the growth of Electric Vehicles.
 
 ---
 
-🎯 Objectives
+#🎯 Objectives
 - Predict EV adoption or cost trends using real-world data.
 - Simulate the impact of different policy scenarios.
 - Generate synthetic “future” datasets using Generative AI.
@@ -15,30 +15,21 @@ Using **Machine Learning** and **Generative AI**, the goal is to simulate and vi
 
 ---
 
-🧠 Problem Statement
+#🧠 Problem Statement
 Despite global efforts toward sustainable mobility, EV adoption is uneven due to varying policy incentives.  
 This project aims to answer:
 > “How can AI and Generative Models help forecast and optimize policy decisions for faster EV adoption?”
 
 ---
 
-📊 Dataset
+#📊 Dataset
 **Dataset Used:** [EV Adoption Trends Worldwide (2015–2023)](https://www.kaggle.com/datasets/khushikyad001/ev-adoption-trends-worldwide-20152023)  
 - Contains data on global EV sales, charging stations, and related variables over time.  
 - The dataset helps in understanding key factors driving EV growth.
 
 ---
 
-🗓️ Week-1 Progress
-**Focus:** Problem Definition and Dataset Setup  
-- ✅ Selected dataset and uploaded to repo (`ev_adoption_dataset.csv`)  
-- ✅ Defined problem and objectives  
-- ✅ Basic EDA (Exploratory Data Analysis) planned  
-- ✅ Streamlit environment setup for dashboard  
-
----
-
-🔧 Tools & Technologies
+#🔧 Tools & Technologies
 | Category | Tools Used |
 |-----------|-------------|
 | Programming | Python, Pandas, NumPy |
@@ -50,19 +41,11 @@ This project aims to answer:
 
 ---
 
-🚀 Next Steps (Week-2 Plan)
-- Perform data cleaning and exploratory analysis.
-- Train baseline regression and forecasting models.
-- Begin integrating Generative AI for synthetic data generation.
-- Add policy simulation options to the Streamlit dashboard.
-
----
-
-👩‍💻 Contributors
+#👩‍💻 Contributors
 - Rahul Majumder — Project Developer  
 
 ---
 
-📄 License
+#📄 License
 This project is open-source and available under the [MIT License](LICENSE).
 
