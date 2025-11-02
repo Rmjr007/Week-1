@@ -77,9 +77,10 @@ scaled_data = scaler.transform(input_data)
 # -------------------------------------------------------
 
 if st.button("🔮 Predict Price Range"):
-prediction = model.predict(scaled_data)[0]
-st.success(f"💰 Estimated Price Range: **${prediction:,.2f} USD**")
-st.balloons()
+    prediction = model.predict(scaled_data)[0]
+    st.success(f"💰 Estimated Price Range: **${prediction:,.2f} USD**")
+    st.balloons()
+
 
 # -------------------------------------------------------
 
