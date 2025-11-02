@@ -75,7 +75,7 @@ The dataset helps identify which factors most strongly influence EV adoption ove
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/green-policy-simulator.git
+git clone https://github.com/Rmjr007/Week-1.git
 cd green-policy-simulator
 ```
 
