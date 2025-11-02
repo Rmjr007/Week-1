@@ -118,4 +118,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🖼️ Project Preview
 
-![EV Dashboard Preview]()
+![EV Dashboard Preview](https://github.com/Rmjr007/Week-1/blob/4a14f849e3ac0475e7e3c7f8ef2f5add3f5db6be/Electric%20Vehicle%20Price%20Predictor.png)
