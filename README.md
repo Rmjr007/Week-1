@@ -103,7 +103,7 @@ You can host your Streamlit app for free on [Streamlit Cloud](https://streamlit.
 
 ## 👩‍💻 Contributors
 
-* ** Rahul Majumder ** — Project Developer
+*  Rahul Majumder — Project Developer
 
 
 ---
