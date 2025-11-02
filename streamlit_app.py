@@ -37,14 +37,15 @@ st.subheader("🔧 Enter EV Specifications")
 col1, col2 = st.columns(2)
 
 with col1:
-battery = st.number_input("🔋 Battery Capacity (kWh)", min_value=10.0, max_value=200.0, value=60.0)
-accel = st.number_input("🚀 0 - 100 km/h (sec)", min_value=2.0, max_value=20.0, value=7.0)
-speed = st.number_input("🏎️ Top Speed (km/h)", min_value=50.0, max_value=400.0, value=180.0)
+    battery = st.number_input("🔋 Battery Capacity (kWh)", min_value=10.0, max_value=200.0, value=60.0)
+    accel = st.number_input("🚀 0 - 100 km/h (sec)", min_value=2.0, max_value=20.0, value=7.0)
+    speed = st.number_input("🏎️ Top Speed (km/h)", min_value=50.0, max_value=400.0, value=180.0)
 
 with col2:
-range_km = st.number_input("🔋 Range (km)", min_value=50.0, max_value=800.0, value=400.0)
-efficiency = st.number_input("⚙️ Efficiency (Wh/km)", min_value=100.0, max_value=400.0, value=180.0)
-seats = st.slider("🪑 Number of Seats", 2, 8, 5)
+    range_km = st.number_input("🔋 Range (km)", min_value=50.0, max_value=800.0, value=400.0)
+    efficiency = st.number_input("⚙️ Efficiency (Wh/km)", min_value=100.0, max_value=400.0, value=180.0)
+    seats = st.slider("🪑 Number of Seats", 2, 8, 5)
+
 
 # -------------------------------------------------------
 
