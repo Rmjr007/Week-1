@@ -2,20 +2,20 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 # Load trained model and scaler
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 model = joblib.load("models/ev_price_model.pkl")
 scaler = joblib.load("models/scaler.pkl")
 
-# -------------------------------------------
+# -------------------------------------------------------
 
-# Page Configuration
+# Streamlit Page Configuration
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 st.set_page_config(
 page_title="EV Price Predictor ⚡",
@@ -26,11 +26,11 @@ layout="centered"
 st.title("⚡ Electric Vehicle Price Prediction Dashboard")
 st.markdown("Use this app to predict the **price range** of an electric vehicle based on its specifications.")
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 # User Input Section
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 st.subheader("🔧 Enter EV Specifications")
 
@@ -46,11 +46,11 @@ range_km = st.number_input("🔋 Range (km)", min_value=50.0, max_value=800.0, v
 efficiency = st.number_input("⚙️ Efficiency (Wh/km)", min_value=100.0, max_value=400.0, value=180.0)
 seats = st.slider("🪑 Number of Seats", 2, 8, 5)
 
-# -------------------------------------------
+# -------------------------------------------------------
 
-# Data Preparation
+# Prepare DataFrame for Prediction
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 input_data = pd.DataFrame({
 "battery": [battery],
@@ -61,26 +61,31 @@ input_data = pd.DataFrame({
 "Number_of_seats": [seats]
 })
 
-# Scale numeric features
+# -------------------------------------------------------
+
+# Scale Data
+
+# -------------------------------------------------------
 
 scaled_data = scaler.transform(input_data)
 
-# -------------------------------------------
+# -------------------------------------------------------
 
-# Prediction
+# Predict Price
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 if st.button("🔮 Predict Price Range"):
 prediction = model.predict(scaled_data)[0]
 st.success(f"💰 Estimated Price Range: **${prediction:,.2f} USD**")
 st.balloons()
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 # Footer
 
-# -------------------------------------------
+# -------------------------------------------------------
 
 st.markdown("---")
 st.caption("Built with ❤️ using Streamlit | Green Policy Simulator Project")
+
