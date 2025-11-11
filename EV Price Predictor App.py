@@ -8,6 +8,11 @@ import joblib
 
 # -------------------------------------------------------
 
+# Note: For this to work on Render, you MUST have a folder named 'models'
+# in your GitHub repository, and it must contain:
+# - ev_price_model.pkl
+# - scaler.pkl
+
 model = joblib.load("models/ev_price_model.pkl")
 scaler = joblib.load("models/scaler.pkl")
 
@@ -90,4 +95,3 @@ if st.button("🔮 Predict Price Range"):
 
 st.markdown("---")
 st.caption("Built with ❤️ using Streamlit | Green Policy Simulator Project")
-
