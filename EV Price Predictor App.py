@@ -13,7 +13,7 @@ import joblib
 # - ev_price_model.pkl
 # - scaler.pkl
 
-model = joblib.load("models/ev_price_model.pkl")
+model = joblib.load("models/ev_policy_best_model.pkl")
 scaler = joblib.load("models/scaler.pkl")
 
 # -------------------------------------------------------
