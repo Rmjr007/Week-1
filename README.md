@@ -1,103 +1,86 @@
-# ⚡ EV Price Prediction – Week 1
+# ⚡ EV Price Prediction – Week 1 – Problem Definition, Dataset Loading, EDA, and Data Cleaning
 
-## 📘 1. Project Overview
-This project aims to build a **Machine Learning model** that predicts the **average cost of Electric Vehicles (EVs)** using real-world economic, policy, environmental, and infrastructure-related factors.
+📘 Overview  
+During Week 1, the focus was on understanding the EV price prediction problem, preparing the dataset, performing exploratory analysis, and cleaning the data for machine-learning tasks in Week 2.  
+The week included loading the raw dataset, examining its structure, creating meaningful visualizations, and generating a cleaned dataset ready for modeling.
 
-**Week 1 focuses on:**
-- Defining the prediction problem  
-- Loading the dataset in Google Colab  
-- Performing Exploratory Data Analysis (EDA)  
-- Cleaning and preparing the dataset for Week 2 modeling  
+🎯 Objectives  
+- Define the regression problem and identify the target variable  
+- Load and examine the raw dataset  
+- Perform Exploratory Data Analysis (EDA)  
+- Visualize important trends and correlations  
+- Clean the dataset by handling missing and inconsistent values  
+- Export a clean dataset for Week-2 model training  
 
----
+🧠 Problem Statement  
+The goal for Week 1 was to understand how economic, policy, and environmental factors influence the **average electric vehicle cost**.  
+This required analyzing the dataset to uncover trends, distribution patterns, and variable relationships before building models in later weeks.
 
-## 📊 2. Week 1 Summary
-Below is a summary of all tasks completed in Week 1:
+📊 Dataset Used  
+**Dataset:** `ev_adoption_dataset_Raw.csv`  
 
-### ✔️ Completed Tasks
-- Clearly defined the regression problem  
-- Identified target and feature variables  
-- Uploaded and loaded the raw dataset: `ev_adoption_dataset_Raw.csv`  
-- Performed EDA:  
-  - First 5 rows  
-  - Data types  
-  - Null value detection  
-  - Descriptive statistics  
-  - Correlation insights  
-- Created visualizations to explore relationships  
-- Cleaned the dataset by removing incomplete rows  
-- Saved the processed dataset as `ev_adoption_dataset_clean.csv`  
+**Key Columns**
+| Column | Description |
+|--------|-------------|
+| year | Year of observation |
+| country | Country/region |
+| avg_cost_ev | Target variable — average EV cost |
+| ev_percentage_share | Share of EVs in total vehicles |
+| charging_stations_count | Number of charging stations |
+| avg_cost_gasoline_vehicle | Average cost of gasoline vehicles |
+| gov_incentive_amount | Government incentive amount |
+| co2_emissions_per_vehicle | CO₂ emissions per vehicle |
+| fuel_price_per_liter | Fuel price in the region |
+| electricity_price_per_kWh | Electricity cost per unit |
 
----
+🔧 Tools & Libraries  
+| Category | Libraries / Tools |
+|----------|--------------------|
+| Data Handling | Pandas |
+| Visualization | Matplotlib, Seaborn |
+| Uploading (Colab) | google.colab.files |
+| Environment | Google Colab / Python 3.10+ |
 
-## 🎯 3. Problem Definition
+🚀 Workflow Summary  
 
-### **Machine Learning Task:**  
-Regression
+### Step 1 – Load Raw Dataset
+Uploaded the file `ev_adoption_dataset_Raw.csv` in Google Colab and loaded it using Pandas.
 
-### **Target Variable (y):**  
-`avg_cost_ev` — Average cost of an electric vehicle
+### Step 2 – Perform EDA
+- Viewed the first few rows of the dataset  
+- Checked data types and null values  
+- Calculated summary statistics  
+- Analyzed correlations with the target variable `avg_cost_ev`
 
-### **Feature Variables (X):**
-| Feature | Description |
-|---------|-------------|
-| `ev_percentage_share` | EV market share percentage |
-| `charging_stations_count` | Count of charging stations |
-| `avg_cost_gasoline_vehicle` | Average cost of gasoline vehicles |
-| `gov_incentive_amount` | Government incentives for EVs |
-| `co2_emissions_per_vehicle` | Emissions per vehicle |
-| `fuel_price_per_liter` | Fuel price in that region |
-| `electricity_price_per_kWh` | Electricity price |
-| `country` | Country (categorical) |
-| `year` | Year of data entry |
+### Step 3 – Create Visualizations
+- Average EV Cost Over Time  
+- Government Incentive Amount vs EV Cost  
+- Correlation Heatmap to understand feature relationships  
 
----
+### Step 4 – Clean Dataset
+- Removed rows with missing values  
+- Exported cleaned dataset as `ev_adoption_dataset_clean.csv`  
+- Prepared dataset for Week-2 model training  
 
-## 💻 4. Required Libraries
+📈 Insights & Observations
 
-### ✔️ All available in Colab:
-`pandas
-matplotlib
-seaborn
-google.colab.files`
+- EV cost shows a clear trend across different years.  
+- Government incentive appears to influence EV pricing.  
+- Several features, such as fuel price, emissions, and incentives, show noticeable correlation with EV cost.  
+- Some countries have significantly higher pricing patterns, indicating regional variations.  
+- Cleaning the dataset improved consistency and removed noisy records, making it ready for modeling.  
 
----
+💾 Saved Outputs
 
-## 🧪 5. How Week-1 Code Was Executed (Google Colab Workflow)
+| File Name | Description |
+|-----------|-------------|
+| `ev_adoption_dataset_Raw.csv` | Original dataset uploaded for analysis |
+| `ev_adoption_dataset_clean.csv` | Cleaned dataset ready for Week-2 modeling |
+| `Week1.ipynb` | Notebook containing all Week-1 code, EDA, and visualizations |
 
-### **Main Notebook:**  
-`Week1.ipynb`
+👩‍💻 Contributor
 
-### ▶️ Execution Steps
-```python```
-# 1. Upload the raw dataset
-from google.colab import files
-uploaded = files.upload()   # Select ev_adoption_dataset_Raw.csv
+- **Rahul Majumder** — Project Developer  
 
-# 2. Load the dataset
-import pandas as pd
-df = pd.read_csv("ev_adoption_dataset_Raw.csv")
-
-# 3. Perform EDA (head, info, describe, correlations)
-
-# 4. Clean the dataset
-df_clean = df.dropna()
-
-# 5. Save the cleaned file
-df_clean.to_csv("ev_adoption_dataset_clean.csv", index=False)` 
-
----
-
-## 📂 6. Output Files
-- ev_adoption_dataset_Raw.csv  
-- ev_adoption_dataset_clean.csv  
-- Week1.ipynb  
-
----
-
-## 👨‍💻 Contributor
-- **Rahul Majumder** — Project Developer
-
-
-
+“Week-1 successfully built the analytical foundation by transforming raw EV data into clean, structured insights for predictive modeling.”
 
