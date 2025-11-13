@@ -17,7 +17,8 @@ The goal for Week 1 was to understand how economic, policy, and environmental fa
 This required analyzing the dataset to uncover trends, distribution patterns, and variable relationships before building models in later weeks.
 
 📊 Dataset Used  
-**Dataset:** `ev_adoption_dataset_Raw.csv`  
+**Dataset:** `ev_adoption_dataset_Raw.csv`
+**Source:** [EV Adoption Trends Worldwide (2015–2023)](https://www.kaggle.com/datasets/khushikyad001/ev-adoption-trends-worldwide-20152023) 
 
 **Key Columns**
 | Column | Description |
@@ -83,4 +84,3 @@ Uploaded the file `ev_adoption_dataset_Raw.csv` in Google Colab and loaded it us
 - **Rahul Majumder** — Project Developer  
 
 “Week-1 successfully built the analytical foundation by transforming raw EV data into clean, structured insights for predictive modeling.”
-
