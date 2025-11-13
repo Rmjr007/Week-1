@@ -84,4 +84,4 @@ Uploaded the file `ev_adoption_dataset_Raw.csv` in Google Colab and loaded it us
 
 - **Rahul Majumder** — Project Developer  
 
-“Week-1 successfully built the analytical foundation by transforming raw EV data into clean, structured insights for predictive modeling.”
+> *“Week-1 successfully built the analytical foundation by transforming raw EV data into clean, structured insights for predictive modeling.”*
