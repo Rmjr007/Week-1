@@ -1,121 +1,103 @@
-# 🌱 Green Policy Simulator for Electric Vehicle (EV) Adoption
+# ⚡ EV Price Prediction – Week 1
 
-### 📅 Week 1 – Project Setup & Dataset Preparation
+## 📘 1. Project Overview
+This project aims to build a **Machine Learning model** that predicts the **average cost of Electric Vehicles (EVs)** using real-world economic, policy, environmental, and infrastructure-related factors.
 
----
-
-## 📘 Project Overview
-
-The **Green Policy Simulator** is an AI-driven project designed to study how different **government policies** affect **Electric Vehicle (EV)** adoption.
-Using **Machine Learning (ML)** and **Generative AI (GenAI)**, this system forecasts EV cost/adoption trends and simulates policy interventions such as subsidies, tax rebates, and infrastructure improvements.
-
-The project also includes a **Streamlit-based interactive dashboard**, enabling users to visualize and test different policy scenarios dynamically.
+**Week 1 focuses on:**
+- Defining the prediction problem  
+- Loading the dataset in Google Colab  
+- Performing Exploratory Data Analysis (EDA)  
+- Cleaning and preparing the dataset for Week 2 modeling  
 
 ---
 
-## 🎯 Objectives
+## 📊 2. Week 1 Summary
+Below is a summary of all tasks completed in Week 1:
 
-* Predict EV cost and adoption trends using real-world data.
-* Simulate and visualize the effects of green policy interventions.
-* Generate synthetic “future” datasets using Generative AI.
-* Create an interactive **Streamlit** interface for policy simulation.
-
----
-
-## 🧠 Problem Statement
-
-Despite a global push toward sustainable mobility, EV adoption remains uneven due to varying incentives, infrastructure gaps, and regional policies.
-
-This project aims to answer:
-
-> **“How can AI and Generative Models help governments design effective policies to accelerate EV adoption?”**
-
----
-
-## 📊 Dataset
-
-**Dataset Used:** [EV Adoption Trends Worldwide (2015–2023)](https://www.kaggle.com/datasets/khushikyad001/ev-adoption-trends-worldwide-20152023)
-
-### Key Features:
-
-* Global EV sales data
-* Charging infrastructure and availability
-* Market share by country and manufacturer
-* Policy metrics and incentives
-
-The dataset helps identify which factors most strongly influence EV adoption over time.
+### ✔️ Completed Tasks
+- Clearly defined the regression problem  
+- Identified target and feature variables  
+- Uploaded and loaded the raw dataset: `ev_adoption_dataset_Raw.csv`  
+- Performed EDA:  
+  - First 5 rows  
+  - Data types  
+  - Null value detection  
+  - Descriptive statistics  
+  - Correlation insights  
+- Created visualizations to explore relationships  
+- Cleaned the dataset by removing incomplete rows  
+- Saved the processed dataset as `ev_adoption_dataset_clean.csv`  
 
 ---
 
-## 🔧 Tools & Technologies
+## 🎯 3. Problem Definition
 
-| Category             | Tools Used                           |
-| -------------------- | ------------------------------------ |
-| **Programming**      | Python, Pandas, NumPy                |
-| **Machine Learning** | Scikit-learn, Random Forest, Prophet |
-| **Generative AI**    | OpenAI API, Gemini, DeepSeek         |
-| **Visualization**    | Matplotlib, Plotly, Seaborn          |
-| **Frontend**         | Streamlit                            |
-| **Data Source**      | Kaggle                               |
+### **Machine Learning Task:**  
+Regression
 
----
+### **Target Variable (y):**  
+`avg_cost_ev` — Average cost of an electric vehicle
 
-## 🚀 Project Workflow
-
-1. **Data Collection & Cleaning** – Import and preprocess EV dataset.
-2. **Exploratory Analysis** – Identify adoption trends and policy correlations.
-3. **Model Training** – Predict EV costs or adoption trends using ML.
-4. **Generative Simulation** – Use GenAI to simulate future scenarios.
-5. **Dashboard Development** – Build and deploy a Streamlit web app for visualization.
-
----
-
-## ⚙️ How to Run This Project
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/Rmjr007/Week-1.git
-cd green-policy-simulator
-```
-
-### 2️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3️⃣ Run the Streamlit App
-
-```bash
-streamlit run week-1/streamlit_app.py
-```
-
-### 4️⃣ Deploy Online (Optional)
-
-You can host your Streamlit app for free on [Streamlit Cloud](https://streamlit.io/cloud):
-
-* Push your repo to GitHub.
-* Go to Streamlit Cloud → “Deploy an app”.
-* Select your repo and choose `streamlit_app.py` as the entry file.
+### **Feature Variables (X):**
+| Feature | Description |
+|---------|-------------|
+| `ev_percentage_share` | EV market share percentage |
+| `charging_stations_count` | Count of charging stations |
+| `avg_cost_gasoline_vehicle` | Average cost of gasoline vehicles |
+| `gov_incentive_amount` | Government incentives for EVs |
+| `co2_emissions_per_vehicle` | Emissions per vehicle |
+| `fuel_price_per_liter` | Fuel price in that region |
+| `electricity_price_per_kWh` | Electricity price |
+| `country` | Country (categorical) |
+| `year` | Year of data entry |
 
 ---
 
-## 👩‍💻 Contributors
+## 💻 4. Required Libraries
 
-*  Rahul Majumder — Project Developer
-
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
-> *“Empowering sustainable mobility through data, AI, and innovation.”*
+### ✔️ All available in Colab:
+`pandas
+matplotlib
+seaborn
+google.colab.files`
 
 ---
 
-## 🖼️ Project Preview
+## 🧪 5. How Week-1 Code Was Executed (Google Colab Workflow)
 
-![EV Dashboard Preview](https://github.com/Rmjr007/Week-1/blob/4a14f849e3ac0475e7e3c7f8ef2f5add3f5db6be/Electric%20Vehicle%20Price%20Predictor.png)
+### **Main Notebook:**  
+`Week1.ipynb`
+
+### ▶️ Execution Steps
+```python```
+# 1. Upload the raw dataset
+from google.colab import files
+uploaded = files.upload()   # Select ev_adoption_dataset_Raw.csv
+
+# 2. Load the dataset
+import pandas as pd
+df = pd.read_csv("ev_adoption_dataset_Raw.csv")
+
+# 3. Perform EDA (head, info, describe, correlations)
+
+# 4. Clean the dataset
+df_clean = df.dropna()
+
+# 5. Save the cleaned file
+df_clean.to_csv("ev_adoption_dataset_clean.csv", index=False)` 
+
+---
+
+## 📂 6. Output Files
+- ev_adoption_dataset_Raw.csv  
+- ev_adoption_dataset_clean.csv  
+- Week1.ipynb  
+
+---
+
+## 👨‍💻 Contributor
+- **Rahul Majumder** — Project Developer
+
+
+
+
