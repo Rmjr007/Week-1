@@ -80,6 +80,24 @@ Uploaded the file `ev_adoption_dataset_Raw.csv` in Google Colab and loaded it us
 | `ev_adoption_dataset_clean.csv` | Cleaned dataset ready for Week-2 modeling |
 | `Week1.ipynb` | Notebook containing all Week-1 code, EDA, and visualizations |
 
+## 📊 Data Visualizations
+
+### 📈 Average EV Cost Over Time
+<p align="center">
+  <img src="images/avg_ev_cost_over_time.png" width="600">
+</p>
+
+### 💰 Government Incentive vs Average EV Cost
+<p align="center">
+  <img src="images/gov_incentive_vs_ev_cost.png" width="600">
+</p>
+
+### 🔥 Correlation Heatmap of All Numerical Features
+<p align="center">
+  <img src="images/correlation_heatmap.png" width="600">
+</p>
+
+
 👩‍💻 Contributor
 
 - **Rahul Majumder** — Project Developer  
