@@ -89,7 +89,7 @@ Uploaded the file `ev_adoption_dataset_Raw.csv` in Google Colab and loaded it us
 
 ### 💰 Government Incentive vs Average EV Cost
 <p align="center">
-  <img src="images/gov_incentive_vs_ev_cost.png" width="600">
+  <img src="https://github.com/Rmjr007/Week-1/blob/2d8498154e078b40f3cf9a4ac3eabf003237ce85/Government%20Incestive%20vs.%20Average%20EV%20Cost.png" width="600">
 </p>
 
 ### 🔥 Correlation Heatmap of All Numerical Features
