@@ -84,7 +84,7 @@ Uploaded the file `ev_adoption_dataset_Raw.csv` in Google Colab and loaded it us
 
 ### 📈 Average EV Cost Over Time
 <p align="center">
-  <img src="images/avg_ev_cost_over_time.png" width="600">
+  <img src="https://github.com/Rmjr007/Week-1/blob/e3ec8337b3b5918d15f105663cd1ef81adeb6643/Average%20EV%20Cost%20Over%20Time.png" width="600">
 </p>
 
 ### 💰 Government Incentive vs Average EV Cost
