@@ -94,7 +94,7 @@ Uploaded the file `ev_adoption_dataset_Raw.csv` in Google Colab and loaded it us
 
 ### 🔥 Correlation Heatmap of All Numerical Features
 <p align="center">
-  <img src="images/correlation_heatmap.png" width="600">
+  <img src="https://github.com/Rmjr007/Week-1/blob/979a598f425e23867f86bda3e2dc3d0174b058eb/Correlation%20Heatmap%20of%20All%20Numerical%20Features.png" width="600">
 </p>
 
 
